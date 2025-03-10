@@ -118,6 +118,14 @@ In **customer churn prediction**, **minimizing False Negatives (FN)** is more cr
 
 ---
 
+## **📚 References**
+
+- Lemos, R. A. de L., Silva, T. C., & Tabak, B. M. (2022). Propension to customer churn in a financial institution: A machine learning approach. *Neural Computing and Applications, 34*(11751–11768). [https://doi.org/10.1007/s00521-022-07067-x](https://doi.org/10.1007/s00521-022-07067-x)
+
+- Kaggle - Bank Customer Churn Dataset by Gaurav Topre. Retrieved from [Kaggle](https://www.kaggle.com/datasets/gauravtopre/bank-customer-churn-dataset)
+
+---
+
 ## ⚠️ **Important Note**
 This project was developed as part of a **Data Science portfolio** to demonstrate the application of **machine learning techniques** in churn prediction. The results are **not intended to serve as conclusive business strategies or a scientific study**.
 
