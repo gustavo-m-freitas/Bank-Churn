@@ -34,8 +34,6 @@ This project is divided into **two main parts**:
 **Accuracy**: ~80%  
 **Lower False Negatives (~15%)**
 
----
-
 1️⃣ **Best Accuracy Across Models**
 The table below highlights the best-performing model in terms of accuracy for each dataset:
 
@@ -49,8 +47,6 @@ The table below highlights the best-performing model in terms of accuracy for ea
  **Key Insights:**
 - **Models 3 & 4 (SMOTE and Original) show the highest accuracy (~85%+).**
 - **However, accuracy alone is misleading** in churn prediction, as it does not reflect the model’s ability to detect actual churned customers.
-
----
 
 2️⃣ **Best Recall Across Models**
 Since our goal is **customer churn prediction**, recall is the most critical metric. The table below highlights the best-performing model in terms of recall for each dataset:
@@ -66,8 +62,6 @@ Since our goal is **customer churn prediction**, recall is the most critical met
 - **Models 1 & 2 (Balanced Datasets) perform best in recall (~78%).**
 - **Model 3 (SMOTE) performs worse (only 61.8%).**
 - **Model 4 (Original, Imbalanced) performs the worst, detecting only ~46% of churned customers.**
-
----
 
 **Why Recall Matters More Than Accuracy**
 Since our goal is **to identify customers who are most likely to churn**, recall is prioritized over accuracy. A model with high accuracy may still miss a large number of churned customers, which is not ideal for proactive retention strategies.
