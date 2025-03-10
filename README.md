@@ -39,11 +39,10 @@ This project is divided into **two main parts**:
 **High False Negatives (~48%) → Misses Nearly Half of Churned Customers**  
 **Low Precision (~0.39 for XGBoost, 0.36 for RF)**  
 
-🔎 **Key Finding**: The **Research Model** prioritizing recall over accuracy performs better in identifying customers at risk of churn, making it more suited for proactive retention strategies.
 
 ---
 
-## 1️⃣ **Best Accuracy Across Models**
+1️⃣ **Best Accuracy Across Models**
 The table below highlights the best-performing model in terms of accuracy for each dataset:
 
 | **Model**                     | **Best Algorithm**  | **Accuracy**  |
@@ -53,13 +52,13 @@ The table below highlights the best-performing model in terms of accuracy for ea
 | **Model 3 (df_all_features_SMOTE)**  | XGBoost            | **0.853222**  |
 | **Model 4 (df_original)**     | Random Forests      | **0.863125**  |
 
-🔍 **Key Insights:**
+ **Key Insights:**
 - **Models 3 & 4 (SMOTE and Original) show the highest accuracy (~85%+).**
 - **However, accuracy alone is misleading** in churn prediction, as it does not reflect the model’s ability to detect actual churned customers.
 
 ---
 
-## 2️⃣ **Best Recall Across Models**
+2️⃣ **Best Recall Across Models**
 Since our goal is **customer churn prediction**, recall is the most critical metric. The table below highlights the best-performing model in terms of recall for each dataset:
 
 | **Model**                     | **Best Algorithm**  | **Recall**  |
@@ -69,19 +68,15 @@ Since our goal is **customer churn prediction**, recall is the most critical met
 | **Model 3 (df_all_features_SMOTE)**  | SVM                 | 0.618600    |
 | **Model 4 (df_original)**     | Random Forests      | 0.460736    |
 
-🔍 **Key Insights:**
+**Key Insights:**
 - **Models 1 & 2 (Balanced Datasets) perform best in recall (~78%).**
 - **Model 3 (SMOTE) performs worse (only 61.8%).**
 - **Model 4 (Original, Imbalanced) performs the worst, detecting only ~46% of churned customers.**
 
 ---
 
-## **Why Recall Matters More Than Accuracy**
+**Why Recall Matters More Than Accuracy**
 Since our goal is **to identify customers who are most likely to churn**, recall is prioritized over accuracy. A model with high accuracy may still miss a large number of churned customers, which is not ideal for proactive retention strategies.
-
-### **Recall vs Accuracy**
-- **Recall** is crucial for identifying churned customers, as this allows the bank to target these customers with retention strategies. Missing churned customers would lead to missed opportunities to prevent churn.
-- **Accuracy**, while important, does not necessarily tell us how well the model identifies churn. For example, a model that classifies most customers as non-churned will have high accuracy but will fail to catch the churn cases.
 
 ---
 
