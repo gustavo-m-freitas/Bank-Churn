@@ -29,16 +29,10 @@ This project is divided into **two main parts**:
 ## ⚖ **Model Comparison: Research vs. Other Approaches**
 
 **Research Model**  
-**Stratified Sampling + Feature Selection**  
+**Stratified Sampling + Feature Selection + Cross-Validation**  
 **Recall**: ~78% (Best Model for Detecting Churn)  
 **Accuracy**: ~80%  
 **Lower False Negatives (~15%)**
-
-**Other Models (SMOTE + Cross-Validation)**  
-**Higher Accuracy (~95%) but Lower Recall (~60%)**  
-**High False Negatives (~48%) → Misses Nearly Half of Churned Customers**  
-**Low Precision (~0.39 for XGBoost, 0.36 for RF)**  
-
 
 ---
 
